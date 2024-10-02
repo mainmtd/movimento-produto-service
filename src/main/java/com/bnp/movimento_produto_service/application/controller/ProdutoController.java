@@ -1,8 +1,6 @@
 package com.bnp.movimento_produto_service.application.controller;
 
 import com.bnp.movimento_produto_service.application.controller.dto.ProdutoResponseDTO;
-import com.bnp.movimento_produto_service.domain.repository.ProdutoCosifRepository;
-import com.bnp.movimento_produto_service.domain.repository.ProdutoRepository;
 import com.bnp.movimento_produto_service.domain.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,12 +16,6 @@ public class ProdutoController {
 
     @Autowired
     private ProdutoService produtoService;
-
-    @Autowired
-    private ProdutoRepository produtoRepository;
-
-    @Autowired
-    private ProdutoCosifRepository produtoCosifRepository;
 
     @GetMapping
     public ResponseEntity<List<ProdutoResponseDTO>> listarProdutos() {

@@ -36,8 +36,7 @@ public class ProdutoCosif {
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
-            if (!(o instanceof ProdutoCosifId)) return false;
-            ProdutoCosifId that = (ProdutoCosifId) o;
+            if (!(o instanceof ProdutoCosifId that)) return false;
             return codProduto.equals(that.codProduto) && codCosif.equals(that.codCosif);
         }
 

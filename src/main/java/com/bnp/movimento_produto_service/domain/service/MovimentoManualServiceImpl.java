@@ -2,9 +2,9 @@ package com.bnp.movimento_produto_service.domain.service;
 
 import com.bnp.movimento_produto_service.application.controller.dto.MovimentoManualRequestDTO;
 import com.bnp.movimento_produto_service.application.controller.dto.MovimentoManualResponseDTO;
+import com.bnp.movimento_produto_service.domain.mapper.MovimentoManualMapper;
 import com.bnp.movimento_produto_service.domain.model.MovimentoManual;
 import com.bnp.movimento_produto_service.domain.repository.MovimentoManualRepository;
-import com.bnp.movimento_produto_service.domain.mapper.MovimentoManualMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
